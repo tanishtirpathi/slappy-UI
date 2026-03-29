@@ -31,7 +31,10 @@
       <nav class="navbar" aria-label="Main navigation">
         <div class="brand">SLAPPY</div>
 
-        <a class="download-btn desktop-center" target="_blank" href="https://github.com/tanishtirpathi/slappyy/releases/download/v1.2/slappy.Setup.1.0.0.exe">Download App</a>
+        <a class="download-btn desktop-center"     onclick="gtag('event', 'download_click', {
+     event_category: 'app',
+     event_label: 'windows_exe'
+   })" target="_blank" href="https://github.com/tanishtirpathi/slappyy/releases/download/v1.2/slappy.Setup.1.0.0.exe">Download App</a>
       </nav>
     </header>
 
@@ -44,7 +47,10 @@
           giving your taps a fun audio reaction.
         </p>
 
-        <a id="download" class="download-btn mobile" target="_blank" href="https://github.com/tanishtirpathi/slappyy/releases/download/v1.2/slappy.Setup.1.0.0.exe">Download for Windows</a>
+        <a id="download" class="download-btn mobile"    onclick="gtag('event', 'download_click', {
+     event_category: 'app',
+     event_label: 'windows_exe'
+   })" target="_blank" href="https://github.com/tanishtirpathi/slappyy/releases/download/v1.2/slappy.Setup.1.0.0.exe">Download for Windows</a>
       </section>
 
       <section class="gallery" aria-label="App reference images">
@@ -68,4 +74,11 @@
       <p>Build By Tanish Tirpathi</p>
     </footer>
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YX1CFM90L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8YX1CFM90L');
+  </script>
 </html>
